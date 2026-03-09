@@ -10,6 +10,7 @@ app.use(express.json()); // Entiende los datos en formato JSON
 
 // Rutas
 app.use('/api', require('./src/routes/auth'));
+app.use('/api/clientes', require('./src/routes/clientes'));
 
 // Iniciar servidor
 const PORT = process.env.PORT || 3000;
